@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - AppService204
 on:
   push:
     branches:
-      - master
+      - myslot
   workflow_dispatch:
 
 jobs:
@@ -62,4 +62,5 @@ jobs:
           app-name: 'AppService204'
           slot-name: 'Production'
           package: .
+
           
